@@ -1,0 +1,112 @@
+
+/* ==================================================
+   Accordion & Toggle
+================================================== */
+
+.accordion {
+  	margin-bottom: 20px;
+}
+
+.accordion-group {
+  	margin-bottom: 4px;
+  	border: none;
+  	-webkit-border-radius: 0;
+       -moz-border-radius: 0;
+          	border-radius: 0;
+}
+
+.accordion-heading {
+  	border-bottom: 0 none;
+}
+
+.accordion-heading .accordion-toggle {
+	position: relative;
+  	display: block;
+  	padding: 15px;
+	background:#3C3F45;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: inherit;
+	
+	-webkit-transition: all 0.1s linear 0s;
+	-moz-transition: all 0.1s linear 0s;
+	-ms-transition: all 0.1s linear 0s;
+	-o-transition: all 0.1s linear 0s;
+	transition: all 0.1s linear 0s;
+}
+
+.accordion-toggle {
+  	cursor: pointer;
+}
+
+.accordion-heading:hover .accordion-toggle,
+.accordion-heading:hover .accordion-toggle.inactive {
+	background:#ED672C;
+	color:#FFFFFF;
+}
+
+.accordion-heading .accordion-toggle.active {
+	background:#C45731;
+	color:#FFFFFF;
+}
+
+.accordion-heading .accordion-toggle.inactive {
+	background:#F7F9FC;
+}
+
+.accordion-heading.accordionize .accordion-toggle span,
+.accordion-heading.togglize .accordion-toggle span {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin: -8px 0 0 0;
+    color: #F9F9F9;
+    font-size: 18px;
+	
+	-webkit-transition: all 0.1s linear 0s;
+	-moz-transition: all 0.1s linear 0s;
+	-ms-transition: all 0.1s linear 0s;
+	-o-transition: all 0.1s linear 0s;
+	transition: all 0.1s linear 0s;
+}
+
+.accordion-heading:hover .accordion-toggle span {
+	color: #FFFFFF;
+}
+
+.accordion-heading .accordion-toggle.active span,
+.accordion-heading:hover .accordion-toggle.inactive span {
+	color: #FFFFFF;	
+}
+
+.accordion-heading.accordionize .accordion-toggle.active span,
+.accordion-heading.togglize .accordion-toggle.active span {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.accordion-heading.togglize .accordion-toggle span {
+	margin: -8px 0 0 0;
+	font-size: 18px;
+}
+
+.accordion-heading.togglize .accordion-toggle.active span {
+	opacity:0;
+	filter: alpha(opacity=0);
+}
+
+.accordion-heading.togglize .accordion-toggle.active span + span {
+	opacity:1;
+	filter: alpha(opacity=100);
+}
+
+.accordion-inner {
+	background: #55575B;
+  	padding: 16px 20px;
+	border: none;
+}
+
